@@ -2,8 +2,7 @@
 const input = document.getElementById("input");
 const buttons = document.querySelectorAll(".btn-container button");
 
-// Define variables to hold current calculation data
-let expression = ""; // Stores the full expression entered by the user
+let expression = "";
 
 // Function to update the display
 function updateDisplay(value) {
@@ -18,8 +17,8 @@ function clearInput() {
 
 // Function to handle deleting the last digit
 function deleteLast() {
-  expression = expression.slice(0, -1); // Remove last character
-  updateDisplay(expression || "0"); // Show "0" if empty
+  expression = expression.slice(0, -1);
+  updateDisplay(expression || "0");
 }
 
 // Function to handle calculations
